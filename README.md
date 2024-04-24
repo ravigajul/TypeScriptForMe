@@ -4,6 +4,15 @@
 
     Installs TypeScript
     npm install -g typescript 
+## Compile typescript file 
+```typescript
+tsc index.ts //this will generate index.js which can be run by node
+node index.js
+```
+## Combine compilation and execution
+```typescript
+ts-node index.ts //This will compile(generates .js) and executes
+```
 
 # Include java script in Html
     <Script src='test.js' defer></script> 
