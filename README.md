@@ -15,7 +15,7 @@
 
 ## Combine compilation and execution
 
-```typescript
+```javascript
   ts-node index.ts
 ```
 
@@ -32,7 +32,7 @@ In JavaScript, backticks (`) are primarily used for template literals, which are
 In this example, the ${name} part inside the backticks is an embedded expression that gets evaluated and interpolated into the string.
 Additionally, backticks can also be used for creating multiline strings without the need for explicit line breaks or concatenation:
 
-```
+```javascript
 const multilineString = `
   This is a multiline
   string created with backticks.
@@ -71,20 +71,21 @@ console.log(multilineString);
 
 ## Types
 
+```javascript
  Primitive Types  
-  a. Number
-   i. Let n: number =5
-  b. Boolean
-   i. Let isTrue: boolean = true
-  c. Void
-  d. Undefined
-   i. Let nothing: undefine = undefined
-  e. String
-   i. Let strName: String = "Ravi"
+  a. Number  
+   i. Let n: number =5  
+  b. Boolean  
+   i. Let isTrue: boolean = true  
+  c. Void  
+  d. Undefined  
+   i. Let nothing: undefine = undefined  
+  e. String  
+   i. Let strName: String = "Ravi"  
   f. Symbol
   g. Null
    i. Let nothing: null = null
-  
+```
 ## Object Types
 
   a. Functions
