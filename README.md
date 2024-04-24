@@ -8,12 +8,16 @@
 
 ## Compile typescript file
 
+```javascript
   tsc index.ts
   node index.js
+ ```
 
 ## Combine compilation and execution
 
+```typescript
   ts-node index.ts
+```
 
 ## Back Ticks
 
