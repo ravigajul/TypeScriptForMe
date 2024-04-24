@@ -104,13 +104,16 @@ const logNumber: (i:Number) => void = (i:number){console.log(i)}
 ## Type Annotation
 
   Declaring the data type we are telling the typescript what data type a variable holds
+  ```javascript
   Let color: string = "red" //explicitly declaring data type
+  ```
 
 ## Type Inference
 
   Type script will automatically identify and determine the data type based on the value assigned to it. This works only when the declaration and assignment happens in the same line.
+  ```javascript
   Let color ="red" //type script inferences String data type.
-
+  ```
 ## Type annotations for functions
 
   Code we add to tell typescript what type of arguments a function will receive and what type of values it will return
