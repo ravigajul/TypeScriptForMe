@@ -86,11 +86,15 @@ console.log(multilineString);
 			i. Let now: Date = new Date();
 			ii. Let point: {x: number; y:number} = {x: 10, y: 10}  //Object Literal
 ## Type Annotation 
-		Declaring the data type we are telling the typescript what data type a variable holds
-		Let color: string = "red" //explicitly declaring data type
+Declaring the data type we are telling the typescript what data type a variable holds
+Let color: string = "red" //explicitly declaring data type
 ## Type Inference 
-		Type script will automatically identify and determine the data type based on the value assigned to it. This works only when the declaration and assignment happens in the same line.
-		Let color ="red" //type script inferences String data type. 
+Type script will automatically identify and determine the data type based on the value assigned to it. This works only when the declaration and assignment happens in the same line.
+Let color ="red" //type script inferences String data type. 
+## Type annotations for functions
+Code we add to tell typescript what type of arguments a function will receive and what type of values it will return
+## Type Inference for functions
+Type inference for functions will figure out what values a function will return and not what values a functions takes as inputs(parameters)
 
 ## When to Use Annotations
 		1. When the functions return type is any
