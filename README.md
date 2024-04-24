@@ -30,12 +30,7 @@ const multilineString = `
 `;
 console.log(multilineString);
 ```
-## Types
-1. Primitive Types
-   1. Number,Boolean,Void,Undefined,String,symbol,null
-2. Object Types
-   1. classes,functions,arrays,objects
-      
+     
 # Include java script in Html
     <Script src='test.js' defer></script> 
 
@@ -77,6 +72,13 @@ console.log(multilineString);
 		
 # Object Types
 		a. Functions
+  			```typescript
+  			const logNumber: (i:Number) => void = (i:number)
+     			{
+				console.log(i)
+    			}
+     			```
+     
 		b. Arrays
 			i. Let colors: String[] = ['red', 'Green', 'Yellow']
 			ii. Let numbers: number[] = [1,2,3,4,5]
