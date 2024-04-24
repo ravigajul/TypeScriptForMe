@@ -23,19 +23,23 @@
 
 In JavaScript, backticks (`) are primarily used for template literals, which are a way to concatenate strings while allowing embedded expressions. Template literals provide a more concise and readable syntax for creating strings with dynamic content compared to traditional methods like string concatenation with the plus operator (+).
 
+```javascript
   const name = 'Alice';
   const greeting =`Hello, ${name}!`;
   console.log(greeting); // Output: Hello, Alice!
+```
 
 In this example, the ${name} part inside the backticks is an embedded expression that gets evaluated and interpolated into the string.
 Additionally, backticks can also be used for creating multiline strings without the need for explicit line breaks or concatenation:
 
+```
 const multilineString = `
   This is a multiline
   string created with backticks.
   No need for explicit line breaks.
 `;
 console.log(multilineString);
+```
 
 ## Include java script in Html
 
@@ -67,7 +71,7 @@ console.log(multilineString);
 
 ## Types
 
- Primitive Types
+ Primitive Types  
   a. Number
    i. Let n: number =5
   b. Boolean
