@@ -121,6 +121,23 @@ const logNumber: (i:Number) => void = (i:number){console.log(i)}
 ## Type Inference for functions
 
   Type inference for functions will figure out what values a function will return and not what values a functions takes as inputs(parameters)
+  The below code doesn't throw error even if return type number is not declared. It will inference the return type automatically
+  
+  ```javascript
+  //we exclusively annotated return type. Mouse hover on add
+    const add = (a: number, b: number): number => {
+      console.log(a + b);
+      return a + b;
+  }
+  //type script infers the return type as number based on the body
+  const add = (a: number, b: number):  => {      
+      return a + b;
+  }
+  //type script inferences the return type as void based on the body 
+  const sub = (a: number, b: number) => {      
+       a - b;
+  }
+  ```
 
 ## When to Use Annotations
 
@@ -129,3 +146,4 @@ const logNumber: (i:Number) => void = (i:number){console.log(i)}
   2. When we declare a variable on one line and initialize it on other line.
   3. Variable whose type cannot be inferred correctly
    i. Ex: Let numberAboveZero : boolean | number  = false //this could take a number or boolean value
+

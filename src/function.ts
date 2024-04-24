@@ -1,6 +1,6 @@
-const add = (a: number, b: number) =>  {
+const add = (a: number, b: number): number => {
     console.log(a + b);
     return a + b;
 }
 
-add (5,4);
+add(5, 4);
