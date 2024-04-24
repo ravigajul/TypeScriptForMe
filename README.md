@@ -8,38 +8,30 @@
 
 ## Compile typescript file
 
-```typscript
-tsc index.ts //this will generate index.js which can be run by node
+tsc index.ts
 node index.js
-```
 
 ## Combine compilation and execution
 
-```typescript
-ts-node index.ts //This will compile(generates .js) and executes
-```
+ts-node index.ts
 
 ## Back Ticks
 
 In JavaScript, backticks (`) are primarily used for template literals, which are a way to concatenate strings while allowing embedded expressions. Template literals provide a more concise and readable syntax for creating strings with dynamic content compared to traditional methods like string concatenation with the plus operator (+).
 
- ```javascript
   const name = 'Alice';
   const greeting =`Hello, ${name}!`;
   console.log(greeting); // Output: Hello, Alice!
- ```
 
 In this example, the ${name} part inside the backticks is an embedded expression that gets evaluated and interpolated into the string.
 Additionally, backticks can also be used for creating multiline strings without the need for explicit line breaks or concatenation:
 
-```javascript
 const multilineString = `
   This is a multiline
   string created with backticks.
   No need for explicit line breaks.
 `;
 console.log(multilineString);
-```
 
 ## Include java script in Html
 
