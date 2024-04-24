@@ -8,12 +8,12 @@
 
 ## Compile typescript file
 
-tsc index.ts
-node index.js
+  tsc index.ts
+  node index.js
 
 ## Combine compilation and execution
 
-ts-node index.ts
+  ts-node index.ts
 
 ## Back Ticks
 
