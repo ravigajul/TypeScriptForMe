@@ -86,6 +86,7 @@ console.log(multilineString);
   g. Null
    i. Let nothing: null = null
 ```
+
 ## Object Types
 
 ```javascript
@@ -104,6 +105,7 @@ const logNumber: (i:Number) => void = (i:number){console.log(i)}
 ## Type Annotation
 
   Declaring the data type we are telling the typescript what data type a variable holds
+
   ```javascript
   Let color: string = "red" //explicitly declaring data type
   ```
@@ -111,9 +113,11 @@ const logNumber: (i:Number) => void = (i:number){console.log(i)}
 ## Type Inference
 
   Type script will automatically identify and determine the data type based on the value assigned to it. This works only when the declaration and assignment happens in the same line.
+
   ```javascript
   Let color ="red" //type script inferences String data type.
   ```
+
 ## Type annotations for functions
 
   Code we add to tell typescript what type of arguments a function will receive and what type of values it will return
@@ -121,21 +125,28 @@ const logNumber: (i:Number) => void = (i:number){console.log(i)}
 ## Type Inference for functions
 
   Type inference for functions will figure out what values a function will return and not what values a functions takes as inputs(parameters)
-  The below code doesn't throw error even if return type number is not declared. It will inference the return type automatically
+  The below code doesn't throw error even if return type number is not declared. It will inference the return type automatically. Refer function.ts for more
   
   ```javascript
   //we exclusively annotated return type. Mouse hover on add
-    const add = (a: number, b: number): number => {
+  const add = (a: number, b: number): number => {
       console.log(a + b);
       return a + b;
   }
-  //type script infers the return type as number based on the body
-  const add = (a: number, b: number):  => {      
+  //type script infers the return type as number based on the body.Mouse hover on add
+  const addtion = (a: number, b: number) => {
       return a + b;
   }
-  //type script inferences the return type as void based on the body 
-  const sub = (a: number, b: number) => {      
-       a - b;
+  //type script inferences the return type as void based on the body.Mouse hover on sub
+  const sub = (a: number, b: number) => {
+      a - b;
+  }
+  //regular non anonymous function
+  function divide(a: number, b: number): number {
+      return a / b;
+  }
+  const multiply = function (a: number, b: number): number {
+    return a * b;
   }
   ```
 
@@ -147,3 +158,35 @@ const logNumber: (i:Number) => void = (i:number){console.log(i)}
   3. Variable whose type cannot be inferred correctly
    i. Ex: Let numberAboveZero : boolean | number  = false //this could take a number or boolean value
 
+## Tuple
+
+  In TypeScript, a tuple is a data structure that allows you to store a fixed number of elements of different types. Unlike arrays, where elements are typically of the same type, tuples enable you to specify a specific type for each element.
+
+```javascript
+  const pepsi =['brown',true,40]; // tuple
+  const coke: [string,boolean,number]=['brown',true,40]; // tuple with type annotation
+  type Drink = [string,boolean,number];
+  const sprite: Drink = ['clear',true,40]; // tuple
+```
+
+## Interfaces
+
+A TypeScript interface defines the contract of an object. It describes the shape of an object, specifying the properties and optional methods that the object must or can have
+
+```javascript
+  interface Person {
+      name: string;   //required                      
+      age: number;    //required                      
+  }
+
+  const person = {
+    name: 'alex',
+    age: 20
+};
+
+//here printPerson function is accepting person parameter of type Person and returning void.
+const printPerson = (person: Person): void => {
+    console.log(person.name);
+    console.log(person.age);
+};
+```
