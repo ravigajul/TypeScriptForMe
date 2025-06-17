@@ -30,6 +30,23 @@ And
 ```
 npx  tsc  --outDir dist
 ```
+
+## Rest Parameters
+In TypeScript, **rest parameters** allow a function to accept an indefinite number of arguments as an array. Here's a simple example:
+
+```typescript
+function sumAll(...numbers: number[]): number {
+  return numbers.reduce((total, num) => total + num, 0);
+}
+
+// Usage
+console.log(sumAll(1, 2, 3));        // Output: 6
+console.log(sumAll(10, 20, 30, 40)); // Output: 100
+```
+
+### Explanation:
+- `...numbers: number[]` is the rest parameter. It gathers all additional arguments passed to the function into an array called `numbers`.
+- `reduce` is used to sum up all the values in the array.
 ## Combine compilation and execution
 
 ```javascript
