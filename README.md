@@ -13,8 +13,22 @@
   node index.js
  ```
 ## Compile files into a folder
+Inclue this in tsconfig.json to compile all files in src folder.
 ```
-npx --package typescript tsc  --outDir dist index.ts
+{
+  "compilerOptions": {
+    "outDir": "dist",
+    "rootDir": "src",
+    "module": "commonjs",
+    "target": "es6",
+    "strict": true
+  },
+  "include": ["src/**/*"]
+}
+```
+And 
+```
+npx  tsc  --outDir dist
 ```
 ## Combine compilation and execution
 
