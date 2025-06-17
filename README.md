@@ -12,7 +12,10 @@
   tsc index.ts
   node index.js
  ```
-
+## Compile files into a folder
+```
+npx --package typescript tsc  --outDir dist index.ts
+```
 ## Combine compilation and execution
 
 ```javascript
